@@ -1,4 +1,4 @@
-<img src="app/src/main/res/drawable-xxhdpi/ic_launcher.png" align="right" />
+<img src="app/src/main/res/drawable-xxxhdpi/ic_launcher.png" align="right" />
 
 # Pendulum Studio
 
@@ -39,7 +39,7 @@ The visualization is performed using OpenGL.
 - Live wallpaper
 
 ## License
-This software is licensed under Apache-2.0. See the [LICENSE](LICENSE) file for more information.
+This software is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for more information.
 
 *Copyright (C) 2015-2018  Volodymyr Vovchenko*
 
