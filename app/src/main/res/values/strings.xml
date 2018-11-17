@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pendulum Studio</string>
+    <string name="action_settings">Settings</string>
+    <string name="tocHeader">Welcome to Pendulum Studio! Discover the motion of various pendulum systems in both 2D and 3D!</string>
+    <string name="tocHeaderold">Welcome to Pendulum Studio! Discover the motion of various pendulum systems in both 2D and 3D!\nUse your fingers to interactively change the positions of the pendulums in 2D case.
+ Also use the accelerometer to define the gravity force and enable the damping force to simulate friction.</string>
+    <string name="toc">Pendulum Studio</string>
+    <string name="button_sensor_gravity">Accelerometer on</string>
+    <string name="button_damping">Damping on</string>
+    <string name="button_sensor_gravity_off">Accelerometer off</string>
+    <string name="button_damping_off">Damping off</string>
+    <string name="button_trace">Trace on</string>
+    <string name="button_trace_off">Trace off</string>
+    <string name="restart">Restart</string>
+    <string name="label_param">Parameters</string>
+
+    <string name="information">About</string>
+	
+	<string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_reset">Reset</string>
+	
+	<string name="dsp">Double Spherical Pendulum (3D)</string>
+    <string name="dsp_subtitle">Double pendulum in three dimensions yielding even more chaotic motion!</string>
+    
+    <string name="DSP_label_l">l&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m) =</string>
+    <string name="DSP_label_l2">l&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m) =</string>
+    <string name="DSP_label_m">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (kg) =</string>
+    <string name="DSP_label_m2">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (kg) =</string>
+    <string name="DSP_label_g">g (m/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="DSP_label_k">γ (mg/s) =</string>
+    <string name="DSP_init">Initial conditions</string>
+    <string name="DSP_init_rand">Random</string>
+    <string name="DSP_init_fixed">Fixed</string>
+    <string name="DSP_trajectory">Trajectory</string>
+    <string name="DSP_label_th0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="DSP_label_th2">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="DSP_label_thv0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="DSP_label_thv2">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="DSP_label_ph0">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="DSP_label_ph2">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="DSP_label_phv0">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="DSP_label_phv2">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="DSP_label_trlength">Trajectory length</string>
+	
+	<string name="sp">Spherical Pendulum (3D)</string>
+    <string name="sp_subtitle">A generalization of mathematical pendulum to three dimensions yields somewhat more complicated motion.</string>
+	
+	<string name="SP_label_l">l (m) =</string>
+    <string name="SP_label_m">m (kg) =</string>
+    <string name="SP_label_g">g (m/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SP_label_k">γ (mg/s) =</string>
+    <string name="SP_init">Initial conditions</string>
+    <string name="SP_init_rand">Random</string>
+    <string name="SP_init_fixed">Fixed</string>
+    <string name="SP_trajectory">Trajectory</string>
+    <string name="SP_label_th0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="SP_label_thv0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SP_label_ph0">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="SP_label_phv0">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SP_label_trlength">Trajectory length</string>
+	
+	
+	<string name="mp">Simple Pendulum (2D)</string>
+    <string name="mp_subtitle">The simplest pendulum.</string>
+	
+	<string name="MP_label_l">l (m) =</string>
+    <string name="MP_label_m">m (kg) =</string>
+    <string name="MP_label_g">g (m/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="MP_label_k">γ (mg/s) =</string>
+    <string name="MP_init">Initial conditions</string>
+    <string name="MP_init_rand">Random</string>
+    <string name="MP_init_fixed">Fixed</string>
+    <string name="MP_trajectory">Trajectory</string>
+    <string name="MP_label_th0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="MP_label_thv0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="MP_label_trlength">Trajectory length</string>
+	
+	
+	<string name="dp">Double Pendulum (2D)</string>
+    <string name="dp_subtitle">Double pendulum is the simplest example of a system exhibiting chaotic motion and high sensitivity to the
+	initial conditions.</string>
+    
+    <string name="DP_label_l">l&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m) =</string>
+    <string name="DP_label_l2">l&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m) =</string>
+    <string name="DP_label_m">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (kg) =</string>
+    <string name="DP_label_m2">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (kg) =</string>
+    <string name="DP_label_g">g (m/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="DP_label_k">γ (mg/s) =</string>
+    <string name="DP_init">Initial conditions</string>
+    <string name="DP_init_rand">Random</string>
+    <string name="DP_init_fixed">Fixed</string>
+    <string name="DP_trajectory">Trajectory</string>
+    <string name="DP_label_th0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="DP_label_th2">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="DP_label_thv0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="DP_label_thv2">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+	<string name="DP_label_trlength">Trajectory length</string>
+	
+	<string name="sp3d">Spring Pendulum (3D)</string>
+    <string name="sp3d_subtitle">A mass connected to a spring, moving in three dimensions.</string>
+    
+    <string name="SP3D_label_aa">a (m) =</string>
+    <string name="SP3D_label_m">m (kg) =</string>
+    <string name="SP3D_label_g">g (m/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SP3D_label_k">k (kg/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+	<string name="SP3D_label_gam">γ (mg/s) =</string>
+    <string name="SP3D_init">Initial conditions</string>
+    <string name="SP3D_init_rand">Random</string>
+    <string name="SP3D_init_fixed">Fixed</string>
+    <string name="SP3D_trajectory">Trajectory</string>
+	<string name="SP3D_label_x0">x (m) =</string>
+    <string name="SP3D_label_xv0">x&lt;sub&gt;&lt;small&gt;&lt;small&gt;t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m/s) =</string>
+    <string name="SP3D_label_y0">y (m) =</string>
+    <string name="SP3D_label_yv0">y&lt;sub&gt;&lt;small&gt;&lt;small&gt;t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m/s) =</string>
+    <string name="SP3D_label_z0">z (m) =</string>
+    <string name="SP3D_label_zv0">z&lt;sub&gt;&lt;small&gt;&lt;small&gt;t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m/s) =</string>
+	<string name="SP3D_label_trlength">Trajectory length</string>
+	
+	
+	<string name="sp2d">Spring Pendulum (2D)</string>
+    <string name="sp2d_subtitle">A mass connected to a spring, moving in two dimensions.</string>
+    
+    <string name="SP2D_label_aa">a (m) =</string>
+    <string name="SP2D_label_m">m (kg) =</string>
+    <string name="SP2D_label_g">g (m/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SP2D_label_k">k (kg/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+	<string name="SP2D_label_gam">γ (mg/s) =</string>
+    <string name="SP2D_init">Initial conditions</string>
+    <string name="SP2D_init_rand">Random</string>
+    <string name="SP2D_init_fixed">Fixed</string>
+    <string name="SP2D_trajectory">Trajectory</string>
+	<string name="SP2D_label_x0">x (m) =</string>
+    <string name="SP2D_label_xv0">x&lt;sub&gt;&lt;small&gt;&lt;small&gt;t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m/s) =</string>
+    <string name="SP2D_label_y0">y (m) =</string>
+    <string name="SP2D_label_yv0">y&lt;sub&gt;&lt;small&gt;&lt;small&gt;t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m/s) =</string>
+	<string name="SP2D_label_trlength">Trajectory length</string>
+	
+	
+	<string name="smp">Spring Mathematical Pendulum (2D)</string>
+    <string name="smp_subtitle">See what happens when rod gets attached to spring.</string>
+    
+    <string name="SMP_label_aa">a (m) =</string>
+    <string name="SMP_label_l">l (m) =</string>
+    <string name="SMP_label_m1">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (kg) =</string>
+    <string name="SMP_label_m2">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (kg) =</string>
+    <string name="SMP_label_g">g (m/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SMP_label_k">k (kg/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+	<string name="SMP_label_gam">γ (mg/s) =</string>
+    <string name="SMP_init">Initial conditions</string>
+    <string name="SMP_init_rand">Random</string>
+    <string name="SMP_init_fixed">Fixed</string>
+    <string name="SMP_trajectory">Trajectory</string>
+	<string name="SMP_label_s">s (m) =</string>
+    <string name="SMP_label_sv">s&lt;sub&gt;&lt;small&gt;&lt;small&gt;t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m/s) =</string>
+    <string name="SMP_label_th0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="SMP_label_th2">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="SMP_label_thv0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SMP_label_thv2">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+	<string name="SMP_label_trlength">Trajectory length</string>
+	
+	
+	<string name="ssp">Spring Spherical Pendulum (3D)</string>
+    <string name="ssp_subtitle">A spherical pendulum connected to a spring, in three dimensions.</string>
+    
+    <string name="SSP_label_a">a (m) =</string>
+    <string name="SSP_label_l">l (m) =</string>
+    <string name="SSP_label_m">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (kg) =</string>
+    <string name="SSP_label_m2">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (kg) =</string>
+    <string name="SSP_label_g">g (m/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SSP_label_k">k (kg/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+	<string name="SSP_label_gam">γ (mg/s) =</string>
+    <string name="SSP_init">Initial conditions</string>
+    <string name="SSP_init_rand">Random</string>
+    <string name="SSP_init_fixed">Fixed</string>
+    <string name="SSP_trajectory">Trajectory</string>
+	<string name="SSP_label_x0">x&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m) =</string>
+    <string name="SSP_label_xv0">x&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SSP_label_y0">y&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m) =</string>
+    <string name="SSP_label_yv0">y&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SSP_label_z0">z&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m) =</string>
+    <string name="SSP_label_zv0">z&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (m/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SSP_label_th0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="SSP_label_thv0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SSP_label_ph0">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="SSP_label_phv0">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (s&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SSP_label_trlength">Trajectory length</string>
+    <string name="button_restart">Restart</string>
+
+   <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="spherical_pendulum_wallpaper">Pendulum Studio</string>
+    <string name="wallpaper_prefs_list">Pendulum</string>
+    <string name="wallpaper_gravity">Use accelerometer</string>
+    <string name="wallpaper_damping">Damping</string>
+    <string name="wallpaper_trace">Show trace</string>
+
+    <string name="help_description">This app simulates motion of various pendulum systems in real-time and renders it on screen using OpenGL.\n\nThe Lagrangian equations of motion for chosen system are solved numerically by applying the Runge-Kutta-Fehlberg method at each time step.\n\nFeatures:\n- Use accelerometer of device as an input of gravity force\n- Use your fingers to interactively change positions of pendulums in 2D case\n- Enable damping force to simulate friction\n- Use restart button to repeat simulation from different initial conditions\n- Change all parameters in settings\n- Live wallpaper\n\nThe app uses the <a href="https://github.com/danielnilsson9/color-picker-view">ColorPickerView</a> library by Daniel Nilsson licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache-2.0</a></string>
+
+    <string name="about">About</string>
+    <string name="about_text_1a">Pendulum Studio</string>
+    <string name="about_text_1b">Version: 1.4</string>
+    <string name="version">Version:</string>
+    <string name="btn_finish_about_label">Close</string>
+    <string name="about_text_2">© Volodymyr Vovchenko</string>
+
+    <string name="pendulum_color">Pendulum color:</string>
+    <string name="pendulum_color_1">Pendulum 1 color:</string>
+    <string name="pendulum_color_2">Pendulum 2 color:</string>
+    <string name="pendulum_color_wave">Pendulum wave color:</string>
+
+    <string name="pick_color">Pick a color</string>
+
+    <string name="google_play">Rate this app</string>
+    <string name="more_apps">More apps</string>
+
+    <string name="pw">Pendulum Wave Effect (3D)</string>
+    <string name="pw_subtitle">Pendulum Wave Effect appears when multiple pendulums are combined!</string>
+
+    <string name="PW_label_NP">Number of pendulums:</string>
+    <string name="PW_label_NT">Number of periods:</string>
+    <string name="PW_label_l">l (m) =</string>
+    <string name="PW_label_m">m (kg) =</string>
+    <string name="PW_label_g">g (m/s&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="PW_label_k">γ (mg/s) =</string>
+    <string name="PW_init">Initial conditions</string>
+    <string name="PW_init_rand">Random</string>
+    <string name="PW_init_fixed">Fixed</string>
+    <string name="PW_label_th0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="PW_label_NP2">Number of pendulums</string>
+    <string name="PW_label_NT2">Number of periods</string>
+
+    <string name="TraceTooLong">Trace too long! Setting to 100000...</string>
+    <string name="TraceInvalid">Trace too long! Reverting to old value...</string>
+
+    <string name="PWLimit">Too many pendulums! Setting to 100...</string>
+
+    <string name="pref_fullscreen">Full screen</string>
+    <string name="pref_fullscreen_summary">Show simulation in full screen mode</string>
+    <string name="pref_fps">FPS</string>
+    <string name="pref_fps_summary">Show frames per second</string>
+
+
+    <string name="settings">Settings</string>
+    <string name="share">Share</string>
+    <string name="share_text">Simulation and visualization of motion of various pendulum systems in real-time\nhttps://play.google.com/store/apps/details?id=com.vlvolad.pendulumstudio</string>
+    <string name="share_subject">Pendulum Studio app for Android</string>
+    <string name="share_via" >Share this app via</string>
+    <string name="PWg" >Too small g! Setting to minimum value...</string>
+    <string name="trajectory_infinite">Infinite</string>
+    <string name="SP_trajectory_infinite">Infinite</string>
+
+</resources>

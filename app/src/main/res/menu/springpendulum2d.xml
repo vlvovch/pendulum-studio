@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item android:id="@+id/SP2D_restart"
+          android:title="@string/restart"
+          android:showAsAction="ifRoom"/> -->
+<!--  <item android:id="@+id/toggleGravity"
+          android:title="@string/toggle_gravity" 
+          android:showAsAction="ifRoom"/>  -->
+    <item android:id="@+id/SP2D_parameters"
+          android:icon="@android:drawable/ic_menu_preferences"
+          android:title="@string/label_param"/>
+    <!-- <item android:id="@+id/settings"
+        android:title="@string/settings"/> -->
+    <item
+        android:id="@+id/action_rate"
+        android:icon="@drawable/ic_action_rate"
+        android:title="@string/google_play"/>
+    <item
+        android:id="@+id/action_information"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/information"/>
+<!--            android:showAsAction="ifRoom" -->
+<!--  <item android:id="@+id/about"
+          android:title="@string/about" /> -->
+</menu>

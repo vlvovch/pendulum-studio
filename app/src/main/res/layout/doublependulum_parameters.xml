@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    
+	<ScrollView
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip" 
+		android:layout_weight="1" >
+	
+	        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" 
+	        android:paddingLeft="12dip">
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/label_param"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/DP_labell1"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/DP_label_l" />
+	
+	            <EditText
+	                android:id="@+id/DP_editl"
+	                android:layout_width="wrap_content"
+	                android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/DP_labell2"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/DP_label_l2" />
+	
+	            <EditText
+	                android:id="@+id/DP_editl2"
+	                android:layout_width="wrap_content"
+	                android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	            android:id="@+id/DP_labelm1"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/DP_label_m" 
+	            android:layout_weight="1"/>
+	            
+	            <EditText
+	                android:id="@+id/DP_editm"
+	                android:layout_width="wrap_content"
+	                android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	            android:id="@+id/DP_labelm2"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/DP_label_m2" 
+	            android:layout_weight="1"/>
+	            
+	            <EditText
+	                android:id="@+id/DP_editm2"
+	                android:layout_width="wrap_content"
+	                android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	            android:id="@+id/DP_labelg"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/DP_label_g" 
+	            android:layout_weight="1"/>
+	            
+	            <EditText
+	                android:id="@+id/DP_editg"
+	                android:layout_width="wrap_content"
+	                android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/DP_label_k" 
+	            android:layout_weight="1"/>
+	            
+	            <EditText
+	                android:id="@+id/DP_editk"
+	                android:layout_width="wrap_content"
+	                android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	
+	        </LinearLayout>
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/DP_init"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <RadioGroup
+	            android:id="@+id/DP_radioGroupInit"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:orientation="horizontal" >
+	
+	            <RadioButton
+	                android:id="@+id/DP_radioRand"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/DP_init_rand" />
+	
+	            <RadioButton
+	                android:id="@+id/DP_radioFixed"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/DP_init_fixed" />
+	
+	        </RadioGroup>
+	        
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/DP_labelth0"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/DP_label_th0" />
+	
+	            <EditText
+	                android:id="@+id/DP_editth0"
+	                android:layout_width="wrap_content"
+	                android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	            android:id="@+id/DP_labelthv0"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/DP_label_thv0" 
+	            android:layout_weight="1"/>
+	            
+	            <EditText
+	                android:id="@+id/DP_editthv0"
+	                android:layout_width="wrap_content"
+	                android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	
+	        </LinearLayout>
+	        
+	     
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/DP_labelth2"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/DP_label_th2" />
+	
+	            <EditText
+	                android:id="@+id/DP_editth2"
+	                android:layout_width="wrap_content"
+	                android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	            android:id="@+id/DP_labelthv2"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/DP_label_thv2" 
+	            android:layout_weight="1"/>
+	            
+	            <EditText
+	                android:id="@+id/DP_editthv2"
+	                android:layout_width="wrap_content"
+	                android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	
+	        </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pendulum_color_1"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/DP_PendulumColor"
+                    android:onClick="PendulumColor"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pendulum_color_2"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/DP_PendulumColor2"
+                    android:onClick="PendulumColor2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="15dp" />
+	
+	        <CheckBox
+	            android:id="@+id/DP_checkBoxTraj"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/DP_trajectory" />
+	        
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	        
+		        	<TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/DP_label_trlength" 
+		            android:layout_weight="1"/>
+		            
+		            <EditText
+		                android:id="@+id/DP_edittrajle"
+		                android:layout_width="wrap_content"
+		                android:layout_weight="0.25"
+		                android:layout_height="wrap_content"
+		                android:inputType="number" >
+		            </EditText>
+
+					<CheckBox
+						android:id="@+id/DP_checkBoxTrajInfinite"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:text="@string/trajectory_infinite" />
+	            
+	         </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/pref_fullscreen_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_fullscreen" />
+
+            <CheckBox
+                android:id="@+id/pref_fps_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_fps" />
+	
+	    </LinearLayout>
+	    
+	
+	</ScrollView>
+	
+	
+	<LinearLayout
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/DP_okButton"
+            android:onClick="okButton"
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="@string/button_ok" />
+
+        <Button
+            android:id="@+id/DP_cancelButton"
+            android:onClick="cancelButton"
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="@string/button_cancel" />
+
+        <Button
+            android:id="@+id/MP_resetButton"
+            android:onClick="resetButton"
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="@string/button_reset" />
+
+    </LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="pendulum_selection"
+        android:title="@string/wallpaper_prefs_list"
+        android:entries="@array/Pendulums"
+        android:entryValues="@array/PendulumValues"
+        android:summary="%s"
+        android:defaultValue="5"/>
+    <CheckBoxPreference
+        android:key="use_accelerometer"
+        android:title="@string/wallpaper_gravity"
+        android:defaultValue="true"/>
+    <CheckBoxPreference
+        android:key="use_damping"
+        android:title="@string/wallpaper_damping"
+        android:defaultValue="true"/>
+    <CheckBoxPreference
+        android:key="show_trace"
+        android:title="@string/wallpaper_trace"
+        android:defaultValue="true"/>
+    <afzkl.development.colorpickerview.preference.ColorPickerPreference
+        android:defaultValue="0xFFFF0000"
+        android:key="wallpaper_pendulum_color_1"
+        android:summary=""
+        android:title="@string/pendulum_color_1" />
+    <afzkl.development.colorpickerview.preference.ColorPickerPreference
+        android:defaultValue="0xFF0000FF"
+        android:key="wallpaper_pendulum_color_2"
+        android:summary=""
+        android:title="@string/pendulum_color_2" />
+    <afzkl.development.colorpickerview.preference.ColorPickerPreference
+        android:defaultValue="0xFF0000FF"
+        android:key="wallpaper_pendulum_color_wave"
+        android:summary=""
+        android:title="@string/pendulum_color_wave" />
+    <EditTextPreference
+        android:defaultValue="12"
+        android:dialogTitle="@string/PW_label_NP2"
+        android:inputType="number"
+        android:key="pref_NP"
+        android:summary="%s"
+        android:title="@string/PW_label_NP2" />
+    <EditTextPreference
+        android:defaultValue="40"
+        android:dialogTitle="@string/PW_label_NT2"
+        android:inputType="number"
+        android:key="pref_NT"
+        android:summary="%s"
+        android:title="@string/PW_label_NT2" />
+
+</PreferenceScreen>

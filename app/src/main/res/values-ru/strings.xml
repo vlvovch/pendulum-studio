@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pendulum Studio</string>
+    <string name="action_settings">Настройки</string>
+    <string name="tocHeader">Добро пожаловать в Pendulum Studio! Исследуйте движение различных маятниковых систем в 2D и 3D!</string>
+    <string name="tocHeaderold">Welcome to Pendulum Studio! Discover the motion of various pendulum systems in both 2D and 3D!\nUse your fingers to interactively change the positions of the pendulums in 2D case.
+ Also use the accelerometer to define the gravity force and enable the damping force to simulate friction.</string>
+    <string name="toc">Pendulum Studio</string>
+    <string name="button_sensor_gravity">Aкселерометр вкл.</string>
+    <string name="button_damping">Трение</string>
+    <string name="button_sensor_gravity_off">Aкселерометр выкл.</string>
+    <string name="button_damping_off">Трение</string>
+    <string name="button_trace">След</string>
+    <string name="button_trace_off">След</string>
+    <string name="restart">Рестарт</string>
+    <string name="label_param">Параметры</string>
+
+    <string name="information">Информация</string>
+	
+	<string name="button_ok">ОК</string>
+    <string name="button_cancel">Отмена</string>
+    <string name="button_reset">Сброс</string>
+	
+	<string name="dsp">Двойной сферический маятник (3D)</string>
+    <string name="dsp_subtitle">Трехмерное обобщение двойного маятника дает еще более хаотическую картину!</string>
+    
+    <string name="DSP_label_l">l&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м) =</string>
+    <string name="DSP_label_l2">l&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м) =</string>
+    <string name="DSP_label_m">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (кг) =</string>
+    <string name="DSP_label_m2">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (кг) =</string>
+    <string name="DSP_label_g">g (м/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="DSP_label_k">γ (мг/с) =</string>
+    <string name="DSP_init">Начальные условия</string>
+    <string name="DSP_init_rand">Случайные</string>
+    <string name="DSP_init_fixed">Фиксированные</string>
+    <string name="DSP_trajectory">Траектория</string>
+    <string name="DSP_label_th0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="DSP_label_th2">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="DSP_label_thv0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="DSP_label_thv2">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="DSP_label_ph0">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="DSP_label_ph2">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="DSP_label_phv0">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="DSP_label_phv2">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="DSP_label_trlength">Длина следа</string>
+	
+	<string name="sp">Сферический маятник (3D)</string>
+    <string name="sp_subtitle">Трехмерное обобщение математического маятника дает несколько более сложное движение.</string>
+	
+	<string name="SP_label_l">l (м) =</string>
+    <string name="SP_label_m">m (кг) =</string>
+    <string name="SP_label_g">g (м/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SP_label_k">γ (мг/с) =</string>
+    <string name="SP_init">Начальные условия</string>
+    <string name="SP_init_rand">Случайные</string>
+    <string name="SP_init_fixed">Фиксированные</string>
+    <string name="SP_trajectory">Траектория</string>
+    <string name="SP_label_th0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="SP_label_thv0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SP_label_ph0">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="SP_label_phv0">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SP_label_trlength">Длина следа</string>
+	
+	
+	<string name="mp">Математический маятник (2D)</string>
+    <string name="mp_subtitle">Наиболее простой маятник.</string>
+	
+	<string name="MP_label_l">l (м) =</string>
+    <string name="MP_label_m">m (кг) =</string>
+    <string name="MP_label_g">g (м/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="MP_label_k">γ (мг/с) =</string>
+    <string name="MP_init">Начальные условия</string>
+    <string name="MP_init_rand">Случайные</string>
+    <string name="MP_init_fixed">Фиксированные</string>
+    <string name="MP_trajectory">Траектория</string>
+    <string name="MP_label_th0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="MP_label_thv0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="MP_label_trlength">Длина следа</string>
+	
+	
+	<string name="dp">Двойной маятник (2D)</string>
+    <string name="dp_subtitle">Двойной маятник является наиболее простым примером системы, для которой характерными являются хаотическое движение и сильная чувствительность к начальным условиям.</string>
+    
+    <string name="DP_label_l">l&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м) =</string>
+    <string name="DP_label_l2">l&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м) =</string>
+    <string name="DP_label_m">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (кг) =</string>
+    <string name="DP_label_m2">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (кг) =</string>
+    <string name="DP_label_g">g (м/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="DP_label_k">γ (мг/с) =</string>
+    <string name="DP_init">Начальные условия</string>
+    <string name="DP_init_rand">Случайные</string>
+    <string name="DP_init_fixed">Фиксированные</string>
+    <string name="DP_trajectory">Траектория</string>
+    <string name="DP_label_th0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="DP_label_th2">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="DP_label_thv0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="DP_label_thv2">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+	<string name="DP_label_trlength">Длина следа</string>
+	
+	<string name="sp3d">Пружинный маятник (3D)</string>
+    <string name="sp3d_subtitle">Груз, присоединенный к пружине. Движение в 3D пространстве.</string>
+    
+    <string name="SP3D_label_aa">a (м) =</string>
+    <string name="SP3D_label_m">m (кг) =</string>
+    <string name="SP3D_label_g">g (м/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SP3D_label_k">k (кг/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+	<string name="SP3D_label_gam">γ (мг/с) =</string>
+    <string name="SP3D_init">Начальные условия</string>
+    <string name="SP3D_init_rand">Случайные</string>
+    <string name="SP3D_init_fixed">Фиксированные</string>
+    <string name="SP3D_trajectory">Траектория</string>
+	<string name="SP3D_label_x0">x (м) =</string>
+    <string name="SP3D_label_xv0">x&lt;sub&gt;&lt;small&gt;&lt;small&gt;t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м/с) =</string>
+    <string name="SP3D_label_y0">y (м) =</string>
+    <string name="SP3D_label_yv0">y&lt;sub&gt;&lt;small&gt;&lt;small&gt;t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м/с) =</string>
+    <string name="SP3D_label_z0">z (м) =</string>
+    <string name="SP3D_label_zv0">z&lt;sub&gt;&lt;small&gt;&lt;small&gt;t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м/с) =</string>
+	<string name="SP3D_label_trlength">Длина следа</string>
+	
+	
+	<string name="sp2d">Пружинный маятник (2D)</string>
+    <string name="sp2d_subtitle">Груз, присоединенный к пружине. Движение в 2D пространстве.</string>
+    
+    <string name="SP2D_label_aa">a (м) =</string>
+    <string name="SP2D_label_m">m (кг) =</string>
+    <string name="SP2D_label_g">g (м/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SP2D_label_k">k (кг/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+	<string name="SP2D_label_gam">γ (мг/с) =</string>
+    <string name="SP2D_init">Начальные условия</string>
+    <string name="SP2D_init_rand">Случайные</string>
+    <string name="SP2D_init_fixed">Фиксированные</string>
+    <string name="SP2D_trajectory">Траектория</string>
+	<string name="SP2D_label_x0">x (м) =</string>
+    <string name="SP2D_label_xv0">x&lt;sub&gt;&lt;small&gt;&lt;small&gt;t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м/с) =</string>
+    <string name="SP2D_label_y0">y (м) =</string>
+    <string name="SP2D_label_yv0">y&lt;sub&gt;&lt;small&gt;&lt;small&gt;t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м/с) =</string>
+	<string name="SP2D_label_trlength">Длина следа</string>
+	
+	
+	<string name="smp">Пружинно-математический маятник (2D)</string>
+    <string name="smp_subtitle">Математический маятник, присоединенный к концу пружины.</string>
+    
+    <string name="SMP_label_aa">a (м) =</string>
+    <string name="SMP_label_l">l (м) =</string>
+    <string name="SMP_label_m1">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (кг) =</string>
+    <string name="SMP_label_m2">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (кг) =</string>
+    <string name="SMP_label_g">g (м/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SMP_label_k">k (кг/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+	<string name="SMP_label_gam">γ (мг/с) =</string>
+    <string name="SMP_init">Начальные условия</string>
+    <string name="SMP_init_rand">Случайные</string>
+    <string name="SMP_init_fixed">Фиксированные</string>
+    <string name="SMP_trajectory">Траектория</string>
+	<string name="SMP_label_s">s (м) =</string>
+    <string name="SMP_label_sv">s&lt;sub&gt;&lt;small&gt;&lt;small&gt;t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м/с) =</string>
+    <string name="SMP_label_th0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="SMP_label_th2">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="SMP_label_thv0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;1 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SMP_label_thv2">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;2 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+	<string name="SMP_label_trlength">Длина следа</string>
+	
+	
+	<string name="ssp">Пружинно-сферический маятник (3D)</string>
+    <string name="ssp_subtitle">Сферический маятник, присоединенный к концу пружины. Движение в 3D пространстве.</string>
+    
+    <string name="SSP_label_a">a (м) =</string>
+    <string name="SSP_label_l">l (м) =</string>
+    <string name="SSP_label_m">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;1&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (кг) =</string>
+    <string name="SSP_label_m2">m&lt;sub&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (кг) =</string>
+    <string name="SSP_label_g">g (м/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SSP_label_k">k (кг/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+	<string name="SSP_label_gam">γ (мг/с) =</string>
+    <string name="SSP_init">Начальные условия</string>
+    <string name="SSP_init_rand">Случайные</string>
+    <string name="SSP_init_fixed">Фиксированные</string>
+    <string name="SSP_trajectory">Траектория</string>
+    <string name="SSP_label_x0">x&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м) =</string>
+    <string name="SSP_label_xv0">x&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SSP_label_y0">y&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м) =</string>
+    <string name="SSP_label_yv0">y&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SSP_label_z0">z&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м) =</string>
+    <string name="SSP_label_zv0">z&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (м/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SSP_label_th0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="SSP_label_thv0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SSP_label_ph0">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="SSP_label_phv0">φ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0 t&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; (с&lt;sup&gt;&lt;small&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="SSP_label_trlength">Длина следа</string>
+    <string name="button_restart">Рестарт</string>
+
+    <string name="play">Старт</string>
+    <string name="pause">Пауза</string>
+    <string name="spherical_pendulum_wallpaper">Pendulum Studio</string>
+    <string name="wallpaper_prefs_list">Маятник</string>
+    <string name="wallpaper_gravity">Акселерометр</string>
+    <string name="wallpaper_damping">Трение</string>
+    <string name="wallpaper_trace">Показывать след</string>
+
+    <string name="help_description">Это приложение моделирует и визуализирует (OpenGL) движение различных маятниковых систем в режиме реального времени.\n\nДля заданной системы на каждом временном шаге проводится численное решение уравнений движений Лагранжа с помощью метода Рунге-Кутта-Фельберга.\n\nОсобенности:\n- Используйте акселерометр Вашего устройства для динамического определения силы гравитации\n- Меняйте положение маятников с помощью пальцев в случае 2D систем\n- Учитывайте силу трения для моделирования затухания колебаний маятника\n- Используйте кнопку рестарта для повторного моделирования с другими начальными условиями\n- Меняйте любые параметры в настройках\n- Живые обои\n\nПриложение использует библиотеку <a href="https://github.com/danielnilsson9/color-picker-view">ColorPickerView</a> под лицензией <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache-2.0</a></string>
+
+    <string name="about">About</string>
+    <string name="about_text_1a">Pendulum Studio</string>
+    <string name="about_text_1b">Версия: 1.4</string>
+    <string name="btn_finish_about_label">Закрыть</string>
+    <string name="about_text_2">© Volodymyr Vovchenko</string>
+
+    <string name="pendulum_color">Цвет маятника:</string>
+    <string name="pendulum_color_1">Цвет 1-го маятника:</string>
+    <string name="pendulum_color_2">Цвет 2-го маятника:</string>
+    <string name="pendulum_color_wave">Цвет волны маятников:</string>
+
+    <string name="pick_color">Выберите цвет</string>
+
+    <string name="google_play">Оценить приложение</string>
+    <string name="more_apps">Больше приложений</string>
+
+    <string name="pw">Эффект волны маятников (3D)</string>
+    <string name="pw_subtitle">Завораживающий эффект бегущей волны маятников возникает при комбинировании множества маяников!</string>
+
+    <string name="PW_label_NP">Количество маятников:</string>
+    <string name="PW_label_NT">Количество периодов:</string>
+    <string name="PW_label_l">l (м) =</string>
+    <string name="PW_label_m">m (кг) =</string>
+    <string name="PW_label_g">g (м/с&lt;sup&gt;&lt;small&gt;&lt;small&gt;2&lt;/small&gt;&lt;/small&gt;&lt;/sup&gt;) =</string>
+    <string name="PW_label_k">γ (мг/с) =</string>
+    <string name="PW_init">Начальные условия</string>
+    <string name="PW_init_rand">Случайные</string>
+    <string name="PW_init_fixed">Фиксированные</string>
+    <string name="PW_label_th0">θ&lt;sub&gt;&lt;small&gt;&lt;small&gt;0&lt;/small&gt;&lt;/small&gt;&lt;/sub&gt; =</string>
+    <string name="PW_label_NP2">Количество маятников:</string>
+    <string name="PW_label_NT2">Количество периодов:</string>
+
+    <string name="pref_fullscreen">Полноэкранный</string>
+    <string name="pref_fullscreen_summary">Полноэкранный режим</string>
+    <string name="pref_fps">FPS</string>
+    <string name="pref_fps_summary">Показывать число кадров в секунду</string>
+
+    <string name="settings">Настройки</string>
+    <string name="share">Поделиться</string>
+    <string name="share_text">Моделирование и визуализицая движения различных маятниковых систем в режиме реального времени\nhttps://play.google.com/store/apps/details?id=com.vlvolad.pendulumstudio</string>
+    <string name="version">Версия:</string>
+    <string name="PWLimit">Слишком много маятников! Ставим 100...</string>
+    <string name="TraceInvalid">Слишком длинная траектория! Ставим 100000...</string>
+    <string name="TraceTooLong">Слишком длинная траектория! Используем старое значение...</string>
+    <string name="share_subject">Pendulum Studio app for Android</string>
+    <string name="share_via" >Поделиться этим приложением через</string>
+    <string name="PWg" >Слишком малое значение g! Будет использовано минимальное значение...</string>
+    <string name="SP_trajectory_infinite">Безконечн.</string>
+   <string name="trajectory_infinite">Безконечн.</string>
+
+</resources>

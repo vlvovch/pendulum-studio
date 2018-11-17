@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    
+	<ScrollView
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip" 
+		android:layout_weight="1" >
+	
+	        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" 
+	        android:paddingLeft="12dip">
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/label_param"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/SMP_labelaa"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/SMP_label_aa" />
+	
+	            <EditText
+	                android:id="@+id/SMP_editaa"
+	                android:layout_width="wrap_content" android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	        </LinearLayout>
+			
+			<LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/SMP_labelk"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/SMP_label_k" />
+	
+	            <EditText
+	                android:id="@+id/SMP_editk"
+	                android:layout_width="wrap_content" android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/SMP_labell"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/SMP_label_l" />
+	
+	            <EditText
+	                android:id="@+id/SMP_editl"
+	                android:layout_width="wrap_content" android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	            android:id="@+id/SMP_labelm1"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/SMP_label_m1" 
+	            android:layout_weight="1"/>
+	            
+	            <EditText
+	                android:id="@+id/SMP_editm"
+	                android:layout_width="wrap_content" android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	            android:id="@+id/SMP_labelm2"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/SMP_label_m2" 
+	            android:layout_weight="1"/>
+	            
+	            <EditText
+	                android:id="@+id/SMP_editm2"
+	                android:layout_width="wrap_content" android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	            android:id="@+id/SMP_labelg"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/SMP_label_g" 
+	            android:layout_weight="1"/>
+	            
+	            <EditText
+	                android:id="@+id/SMP_editg"
+	                android:layout_width="wrap_content" android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/SMP_label_gam" 
+	            android:layout_weight="1"/>
+	            
+	            <EditText
+	                android:id="@+id/SMP_editgam"
+	                android:layout_width="wrap_content" android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	
+	        </LinearLayout>
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/SMP_init"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <RadioGroup
+	            android:id="@+id/SMP_radioGroupInit"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:orientation="horizontal" >
+	
+	            <RadioButton
+	                android:id="@+id/SMP_radioRand"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/SMP_init_rand" />
+	
+	            <RadioButton
+	                android:id="@+id/SMP_radioFixed"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/SMP_init_fixed" />
+	
+	        </RadioGroup>
+			
+			
+			<LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/SMP_labels"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/SMP_label_th0" />
+	
+	            <EditText
+	                android:id="@+id/SMP_edits"
+	                android:layout_width="wrap_content" android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	            android:id="@+id/SMP_labelsv"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/SMP_label_thv0" 
+	            android:layout_weight="1"/>
+	            
+	            <EditText
+	                android:id="@+id/SMP_editsv"
+	                android:layout_width="wrap_content" android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	
+	        </LinearLayout>
+	        
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/SMP_labelth0"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/SMP_label_th0" />
+	
+	            <EditText
+	                android:id="@+id/SMP_editth0"
+	                android:layout_width="wrap_content" android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	            android:id="@+id/SMP_labelthv0"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/SMP_label_thv0" 
+	            android:layout_weight="1"/>
+	            
+	            <EditText
+	                android:id="@+id/SMP_editthv0"
+	                android:layout_width="wrap_content" android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	
+	        </LinearLayout>
+	        
+	     
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/SMP_labelth2"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/SMP_label_th2" />
+	
+	            <EditText
+	                android:id="@+id/SMP_editth2"
+	                android:layout_width="wrap_content" android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="140dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            
+	            <TextView
+	            android:id="@+id/SMP_labelthv2"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/SMP_label_thv2" 
+	            android:layout_weight="1"/>
+	            
+	            <EditText
+	                android:id="@+id/SMP_editthv2"
+	                android:layout_width="wrap_content" android:layout_weight="0.25"
+	                android:layout_height="wrap_content"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	
+	        </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pendulum_color_1"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/SMP_PendulumColor"
+                    android:onClick="PendulumColor"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pendulum_color_2"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/SMP_PendulumColor2"
+                    android:onClick="PendulumColor2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="15dp" />
+	
+	        <CheckBox
+	            android:id="@+id/SMP_checkBoxTraj"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/SMP_trajectory" />
+	        
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	        
+		        	<TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/SMP_label_trlength" 
+		            android:layout_weight="1"/>
+		            
+		            <EditText
+		                android:id="@+id/SMP_edittrajle"
+		                android:layout_width="wrap_content" android:layout_weight="0.25"
+		                android:layout_height="wrap_content"
+		                android:inputType="number" >
+		            </EditText>
+
+					<CheckBox
+						android:id="@+id/SMP_checkBoxTrajInfinite"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:text="@string/trajectory_infinite" />
+	            
+	         </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/pref_fullscreen_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_fullscreen" />
+
+            <CheckBox
+                android:id="@+id/pref_fps_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_fps" />
+	
+	    </LinearLayout>
+	    
+	
+	</ScrollView>
+	
+	
+	<LinearLayout
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/SMP_okButton"
+            android:onClick="okButton"
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="@string/button_ok" />
+
+        <Button
+            android:id="@+id/SMP_cancelButton"
+            android:onClick="cancelButton"
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="@string/button_cancel" />
+
+        <Button
+            android:id="@+id/MP_resetButton"
+            android:onClick="resetButton"
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="@string/button_reset" />
+
+    </LinearLayout>
+	
+</LinearLayout>
