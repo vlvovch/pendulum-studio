@@ -96,7 +96,7 @@ public class SMPGLActivity extends Activity implements SensorEventListener {
     Runnable timerButtonsOn = new Runnable() {
         @Override
         public void run() {
-            Log.d("Act","ButtonsOn");
+            //Log.d("Act","ButtonsOn");
             if(Build.VERSION.SDK_INT >= 12) {
 
                 findViewById(R.id.SMP_buttons).setAlpha(0f);

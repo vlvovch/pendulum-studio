@@ -64,8 +64,8 @@ public class DPGLActivity extends Activity implements SensorEventListener {
         @Override
         public void run() {
             deltaT = System.currentTimeMillis() - deltaT;
-            Log.d("DPGLActivity", "dT: " + deltaT);
-            Log.d("DPGLActivity", "Frames: " + DPGLRenderer.mPendulum.frames);
+            //Log.d("DPGLActivity", "dT: " + deltaT);
+            //Log.d("DPGLActivity", "Frames: " + DPGLRenderer.mPendulum.frames);
             float fps = DPGLRenderer.mPendulum.frames / (float)(deltaT) * 1.e3f;
             ((TextView)findViewById(R.id.fps)).setText("FPS: " + String.format("%.0f", fps));
             DPGLRenderer.mPendulum.frames = 0;
@@ -78,7 +78,7 @@ public class DPGLActivity extends Activity implements SensorEventListener {
     Runnable timerButtonsOff = new Runnable() {
         @Override
         public void run() {
-            Log.d("Act","ButtonsOff");
+            //Log.d("Act","ButtonsOff");
             if (paused || !PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getBoolean("pref_buttons_fade", true)) return;
 
             if(Build.VERSION.SDK_INT >= 12) {
@@ -105,7 +105,7 @@ public class DPGLActivity extends Activity implements SensorEventListener {
     Runnable timerButtonsOn = new Runnable() {
         @Override
         public void run() {
-            Log.d("Act","ButtonsOn");
+            //Log.d("Act","ButtonsOn");
             if(Build.VERSION.SDK_INT >= 12) {
 
                 findViewById(R.id.DP_buttons).setAlpha(0f);

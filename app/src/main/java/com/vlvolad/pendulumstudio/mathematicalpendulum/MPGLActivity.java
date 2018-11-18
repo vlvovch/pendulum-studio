@@ -101,7 +101,7 @@ public class MPGLActivity extends Activity implements SensorEventListener {
     Runnable timerButtonsOn = new Runnable() {
         @Override
         public void run() {
-            Log.d("Act","ButtonsOn");
+            //d("Act","ButtonsOn");
             if(Build.VERSION.SDK_INT >= 12) {
 
                 findViewById(R.id.MP_buttons).setAlpha(0f);

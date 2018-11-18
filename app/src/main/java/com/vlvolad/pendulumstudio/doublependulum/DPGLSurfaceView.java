@@ -48,7 +48,6 @@ public class DPGLSurfaceView extends GLSurfaceView {
                         if (act.buttonsAreOff)
                             act.timerHandler.post(act.timerButtonsOn);
                         else {
-                            Log.d("DPTimer", "DPTimerOn");
                             act.timerHandler.removeCallbacks(act.timerButtonsOff);
                             act.timerHandler.postDelayed(act.timerButtonsOff, act.buttonsFadeOutTime);
                         }
