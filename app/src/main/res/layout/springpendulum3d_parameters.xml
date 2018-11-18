@@ -353,6 +353,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pref_fps" />
+
+			<CheckBox
+				android:id="@+id/pref_buttons_fade_loc"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/pref_buttons_fade" />
 	
 	    </LinearLayout>
 	    

@@ -10,4 +10,8 @@
         android:title="@string/pref_fps"
         android:summary="@string/pref_fps_summary"
         android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="pref_buttons_fade"
+        android:title="@string/pref_buttons_fade"
+        android:defaultValue="true" />
 </PreferenceScreen>

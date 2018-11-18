@@ -70,6 +70,10 @@ public class PWParametersActivity extends Activity {
         boolean fps = sharedPref.getBoolean("pref_fps", false);
         CheckBox checkFps = (CheckBox) findViewById(R.id.pref_fps_loc);
         checkFps.setChecked(fps);
+
+        boolean fade = sharedPref.getBoolean("pref_buttons_fade", true);
+        CheckBox checkFade = (CheckBox) findViewById(R.id.pref_buttons_fade_loc);
+        checkFade.setChecked(fade);
     }
 
 
@@ -151,6 +155,8 @@ public class PWParametersActivity extends Activity {
         editor.putBoolean("pref_fullscreen", checkFullScreen.isChecked());
         CheckBox checkFps = (CheckBox) findViewById(R.id.pref_fps_loc);
         editor.putBoolean("pref_fps", checkFps.isChecked());
+        CheckBox checkFade = (CheckBox) findViewById(R.id.pref_buttons_fade_loc);
+        editor.putBoolean("pref_buttons_fade", checkFade.isChecked());
         editor.commit();
 
         PWParametersActivity.this.finish();

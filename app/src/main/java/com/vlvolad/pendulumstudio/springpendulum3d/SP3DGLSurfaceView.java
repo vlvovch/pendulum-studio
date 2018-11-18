@@ -3,6 +3,7 @@ package com.vlvolad.pendulumstudio.springpendulum3d;
 import android.content.Context;
 import android.opengl.GLSurfaceView;
 import android.util.AttributeSet;
+import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 
@@ -12,34 +13,50 @@ public class SP3DGLSurfaceView extends GLSurfaceView {
 
 	SP3DGLRenderer mRenderer;
     private ScaleGestureDetector mScaleDetector;
+    private GestureDetector mTapDetector;
 
     public SP3DGLSurfaceView(Context context) {
         super(context);
 
+        init();
+    }
+    
+    public SP3DGLSurfaceView(Context context, AttributeSet attrs) 
+	{
+		super(context, attrs);
+
+		init();
+	}
+
+    public void init() {
         // Create an OpenGL ES 2.0 context.
         setEGLContextClientVersion(2);
 
         // Set the Renderer for drawing on the GLSurfaceView
         mRenderer = new SP3DGLRenderer();
         setRenderer(mRenderer);
-        mScaleDetector = new ScaleGestureDetector(context, new ScaleListener());
+        mScaleDetector = new ScaleGestureDetector(getContext(), new ScaleListener());
+        mTapDetector = new GestureDetector(getContext(), new GestureDetector.SimpleOnGestureListener() {
+            @Override
+            public boolean onSingleTapConfirmed(MotionEvent e) {
+                final SP3DGLActivity act = (SP3DGLActivity)getContext();
+                act.runOnUiThread(new Runnable(){
+                    @Override
+                    public void run() {
+                        if (act.buttonsAreOff)
+                            act.timerHandler.post(act.timerButtonsOn);
+                        else {
+                            act.timerHandler.removeCallbacks(act.timerButtonsOff);
+                            act.timerHandler.postDelayed(act.timerButtonsOff, act.buttonsFadeOutTime);
+                        }
+                    } });
+                return true;
+            }
+        });
 
         // Render the view only when there is a change in the drawing data
         //setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
     }
-    
-    public SP3DGLSurfaceView(Context context, AttributeSet attrs) 
-	{
-		super(context, attrs);
-		
-		// Create an OpenGL ES 2.0 context.
-        setEGLContextClientVersion(2);
-
-        // Set the Renderer for drawing on the GLSurfaceView
-        mRenderer = new SP3DGLRenderer();
-        setRenderer(mRenderer);
-        mScaleDetector = new ScaleGestureDetector(context, new ScaleListener());
-	}
 
     private final float TOUCH_SCALE_FACTOR = 180.0f / 320;
     private float mPreviousX;
@@ -58,6 +75,7 @@ public class SP3DGLSurfaceView extends GLSurfaceView {
         mPreviousX = x;
         mPreviousY = y;
     	mScaleDetector.onTouchEvent(e);
+        mTapDetector.onTouchEvent(e);
         return true;
     }
     

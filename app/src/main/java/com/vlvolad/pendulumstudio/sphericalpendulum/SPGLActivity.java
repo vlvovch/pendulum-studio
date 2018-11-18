@@ -3,6 +3,8 @@ package com.vlvolad.pendulumstudio.sphericalpendulum;
 import com.vlvolad.pendulumstudio.InformationActivity;
 import com.vlvolad.pendulumstudio.R;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
@@ -47,6 +49,8 @@ public class SPGLActivity extends Activity implements SensorEventListener {
 	private Display display;
 
     static int frequency = 1000;
+    static int buttonsFadeOutTime = 4000;
+    static int buttonsFadeAnimationTime = 300;
     private boolean paused;
     private long deltaT;
     Handler timerHandler = new Handler();
@@ -61,6 +65,58 @@ public class SPGLActivity extends Activity implements SensorEventListener {
             SPGLRenderer.mPendulum.frames = 0;
             deltaT = System.currentTimeMillis();
             if (isRunning && !paused) timerHandler.postDelayed(this, frequency);
+        }
+    };
+
+    boolean buttonsAreOff;
+    Runnable timerButtonsOff = new Runnable() {
+        @Override
+        public void run() {
+            if (paused || !PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getBoolean("pref_buttons_fade", true)) return;
+
+            if(Build.VERSION.SDK_INT >= 12) {
+
+                findViewById(R.id.SP_buttons).animate()
+                        .alpha(0f)
+                        .setDuration(buttonsFadeAnimationTime)
+                        .setListener(new AnimatorListenerAdapter() {
+                            @Override
+                            public void onAnimationEnd(Animator animation) {
+                                findViewById(R.id.SP_buttons).setVisibility(View.GONE);
+                                buttonsAreOff = true;
+                            }
+                        });
+            }
+            else {
+                findViewById(R.id.SP_buttons).setVisibility(View.GONE);
+                buttonsAreOff = true;
+            }
+
+        }
+    };
+
+    Runnable timerButtonsOn = new Runnable() {
+        @Override
+        public void run() {
+            Log.d("Act","ButtonsOn");
+            if(Build.VERSION.SDK_INT >= 12) {
+
+                findViewById(R.id.SP_buttons).setAlpha(0f);
+                findViewById(R.id.SP_buttons).setVisibility(View.VISIBLE);
+                findViewById(R.id.SP_buttons).animate()
+                        .alpha(1f)
+                        .setDuration(buttonsFadeAnimationTime)
+                        .setListener(null);
+            }
+            else
+                findViewById(R.id.SP_buttons).setVisibility(View.VISIBLE);
+
+            buttonsAreOff = false;
+
+            if (!paused) {
+                timerHandler.removeCallbacks(timerButtonsOff);
+                timerHandler.postDelayed(timerButtonsOff, buttonsFadeOutTime);
+            }
         }
     };
 
@@ -193,6 +249,9 @@ public class SPGLActivity extends Activity implements SensorEventListener {
         else ((ToggleButton)findViewById(R.id.togglebutton_trace)).setChecked(true);
 
         paused = false;
+
+        buttonsAreOff = false;
+        timerHandler.postDelayed(timerButtonsOff, buttonsFadeOutTime);
     }
 
     @Override
@@ -222,6 +281,7 @@ public class SPGLActivity extends Activity implements SensorEventListener {
         mGLView.onPause();
         if (useDynGravity) mSensorManager.unregisterListener(this);
         paused = true;
+        makeButtonsVisible();
     }
     
     @Override
@@ -256,11 +316,18 @@ public class SPGLActivity extends Activity implements SensorEventListener {
         mGLView.onResume();
         if (useDynGravity) mSensorManager.registerListener(this, mGravity, SensorManager.SENSOR_DELAY_GAME);
 
+        makeButtonsVisible();
+
         paused = false;
         if (isRunning && !paused) {
             SPGLRenderer.mPendulum.frames = 0;
             deltaT = System.currentTimeMillis();
             timerHandler.postDelayed(timerRunnable, frequency);
+
+            if (!buttonsAreOff) {
+                timerHandler.removeCallbacks(timerButtonsOff);
+                timerHandler.postDelayed(timerButtonsOff, buttonsFadeOutTime);
+            }
         }
     }
 
@@ -373,5 +440,13 @@ public class SPGLActivity extends Activity implements SensorEventListener {
             view.setVisibility(View.VISIBLE);
         else
             view.setVisibility(View.INVISIBLE);
+    }
+
+    protected void makeButtonsVisible() {
+        timerHandler.removeCallbacks(timerButtonsOff);
+        if(Build.VERSION.SDK_INT >= 12)
+            findViewById(R.id.SP_buttons).setAlpha(1f);
+        findViewById(R.id.SP_buttons).setVisibility(View.VISIBLE);
+        buttonsAreOff = false;
     }
 }

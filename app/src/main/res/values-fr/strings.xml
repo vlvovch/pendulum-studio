@@ -250,5 +250,6 @@
     <string name="PWg" >g trop petit! Réglage à la valeur minimale...</string>
    <string name="SP_trajectory_infinite">Infini</string>
    <string name="trajectory_infinite">Infini</string>
+    <string name="pref_buttons_fade">Boutons auto-hide</string>
 
 </resources>

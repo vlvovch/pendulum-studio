@@ -1,8 +1,11 @@
 package com.vlvolad.pendulumstudio.mathematicalpendulum;
 
+import android.app.Activity;
 import android.content.Context;
 import android.opengl.GLSurfaceView;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 
@@ -11,39 +14,54 @@ public class MPGLSurfaceView extends GLSurfaceView {
 
     MPGLRenderer mRenderer;
     private ScaleGestureDetector mScaleDetector;
+    private GestureDetector mTapDetector;
     private int count;
 
     public MPGLSurfaceView(Context context) {
         super(context);
 
-        // Create an OpenGL ES 2.0 context.
-        setEGLContextClientVersion(2);
-
-        // Set the Renderer for drawing on the GLSurfaceView
-        mRenderer = new MPGLRenderer();
-        setRenderer(mRenderer);
-        mScaleDetector = new ScaleGestureDetector(context, new ScaleListener());
-        
-        count = 0;
-
-        // Render the view only when there is a change in the drawing data
-        //setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
+        init();
     }
     
     public MPGLSurfaceView(Context context, AttributeSet attrs) 
 	{
 		super(context, attrs);
 		
-		// Create an OpenGL ES 2.0 context.
+		init();
+	}
+
+	public void init() {
+        // Create an OpenGL ES 2.0 context.
         setEGLContextClientVersion(2);
 
         // Set the Renderer for drawing on the GLSurfaceView
         mRenderer = new MPGLRenderer();
         setRenderer(mRenderer);
-        mScaleDetector = new ScaleGestureDetector(context, new ScaleListener());
-        
+        mScaleDetector = new ScaleGestureDetector(getContext(), new ScaleListener());
+
+        mTapDetector = new GestureDetector(getContext(), new GestureDetector.SimpleOnGestureListener() {
+            @Override
+            public boolean onSingleTapConfirmed(MotionEvent e) {
+                final MPGLActivity act = (MPGLActivity)getContext();
+                act.runOnUiThread(new Runnable(){
+                    @Override
+                    public void run() {
+                        if (act.buttonsAreOff)
+                            act.timerHandler.post(act.timerButtonsOn);
+                        else {
+                            act.timerHandler.removeCallbacks(act.timerButtonsOff);
+                            act.timerHandler.postDelayed(act.timerButtonsOff, act.buttonsFadeOutTime);
+                        }
+                    } });
+                return true;
+            }
+        });
+
         count = 0;
-	}
+
+        // Render the view only when there is a change in the drawing data
+        //setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
+    }
 
     private final float TOUCH_SCALE_FACTOR = 180.0f / 320;
     private float mPreviousX;
@@ -84,6 +102,7 @@ public class MPGLSurfaceView extends GLSurfaceView {
         mPreviousX = x;
         mPreviousY = y;
     	mScaleDetector.onTouchEvent(e);
+        mTapDetector.onTouchEvent(e);
         return true;
     }
     

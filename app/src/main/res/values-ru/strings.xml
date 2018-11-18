@@ -247,5 +247,6 @@
     <string name="PWg" >Слишком малое значение g! Будет использовано минимальное значение...</string>
     <string name="SP_trajectory_infinite">Безконечн.</string>
    <string name="trajectory_infinite">Безконечн.</string>
+    <string name="pref_buttons_fade">Автоскрытие кнопок</string>
 
 </resources>

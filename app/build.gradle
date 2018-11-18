@@ -9,7 +9,7 @@ android {
         applicationId "com.vlvolad.pendulumstudio"
         minSdkVersion 9
         targetSdkVersion 28
-        versionCode 16
+        versionCode 17
         versionName "1.4.2"
     }
 
