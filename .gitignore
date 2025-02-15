@@ -2,6 +2,7 @@
 /*/build/
 build/
 app/libs/ColorPickerLibrary/build/
+app/release/
 
 local/
 

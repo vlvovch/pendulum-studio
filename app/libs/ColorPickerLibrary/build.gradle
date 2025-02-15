@@ -1,11 +1,12 @@
 apply plugin: 'com.android.library'
 android {
+    namespace "afzkl.development.colorpickerview"  // Replace with the actual package name
     compileSdkVersion 25
-    buildToolsVersion '25.0.3'
+//    buildToolsVersion '25.0.3'
 
     defaultConfig {
         minSdkVersion 4
-        targetSdkVersion 28
+        targetSdkVersion 34
     }
 
     buildTypes {

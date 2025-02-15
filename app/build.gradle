@@ -3,14 +3,13 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion '25.0.3'
 
     defaultConfig {
         applicationId "com.vlvolad.pendulumstudio"
         minSdkVersion 9
-        targetSdkVersion 28
-        versionCode 17
-        versionName "1.4.2"
+        targetSdkVersion 34
+        versionCode 19
+        versionName "1.4.3"
     }
 
     signingConfigs {
@@ -32,19 +31,20 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
-            signingConfig signingConfigs.release
+//            signingConfig signingConfigs.release
         }
         debug {
-            signingConfig signingConfigs.release
+//            signingConfig signingConfigs.release
         }
     }
+    namespace 'com.vlvolad.pendulumstudio'
 }
 
 dependencies {
     //compile 'com.android.support:support-v4:28.0.0'
     //compile 'com.google.android.gms:play-services:+'
-    compile 'com.android.support:appcompat-v7:25.4.0'
-    compile project(':ColorPickerLibrary') // Needed for API level < 15 support
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+    implementation project(':ColorPickerLibrary') // Needed for API level < 15 support
     //compile "com.github.danielnilsson9:color-picker-view:1.4.0@aar"
     //compile 'com.google.android.gms:play-services-oss-licenses:16.0.0'
 }
